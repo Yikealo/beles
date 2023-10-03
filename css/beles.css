@@ -1,0 +1,72 @@
+@import url("reset.css");
+
+:root {
+    --border-color: #D6D6D6;
+    --btn-color: #361134;
+    --bg-color: #07393C;
+    --text-color: #CCCCCC;
+    --header-color: white;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--bg-color);
+}
+
+
+.header {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font: 2rem Georgia, serif;
+    color: var(--header-color);
+}
+
+
+.geez-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.geez-input {
+    min-width: min(80ch, 70vw);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    
+}
+
+
+.submit-btn {
+    padding: 0.25rem 1rem;
+    margin: 0.25rem;
+    font: 1.25rem Georgia, serif;
+    border: none;
+    border-radius: 1rem;
+    color: var(--btn-color);
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    transform: scale(1.02);
+}
+
+.latin-text {
+    display: none;
+    width: min(80ch, 80vw);
+    max-width: 80vh;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    font: 1rem Georgia, serif;
+    color: var(--text-color);
+}
