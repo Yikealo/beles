@@ -1,7 +1,7 @@
 function handleSubmit(event){
     event.preventDefault();
-    const geezInput = event.target.elements.geezinput;
-    const submitBtn = event.target.elements.submit;
+    const geezInput = document.querySelector('.geez-input');
+    const submitBtn = document.querySelector('.submit-btn')
     const latinText = document.querySelector('.latin-text');
     const header = document.querySelector('.header');
 
